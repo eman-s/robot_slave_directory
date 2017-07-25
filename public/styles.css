@@ -1,0 +1,14 @@
+body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+section{
+/*padding: 20px;
+width: 60px;
+height: ;*/
+border-style: solid;
+border-width: thin;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>need a robot slave?</title>
+  </head>
+  <body>
+    {{#users}}
+    <section>
+
+      <a href="http://localhost:3000/robot/{{username}}"><img src="{{avatar}}" alt="{{name}}"></a>
+      <h1>{{name}}</h1>
+      <p>{{job}}, {{company}}</p>
+
+
+    </section>
+    {{/users}}
+
+  </body>
+</html>
