@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <meta charset="utf-8">
     <title>need a robot slave?</title>
   </head>
-  <body>
+  <body id="indexBody">
     {{#users}}
-    <section>
+    <section class="avatarBox">
 
-      <a href="http://localhost:3000/robot/{{username}}"><img src="{{avatar}}" alt="{{name}}"></a>
-      <h1>{{name}}</h1>
-      <p>{{job}}, {{company}}</p>
+      <a href="http://localhost:3000/robot/{{username}}"><img class="robotAvatars" src="{{avatar}}" alt="{{name}}"></a>
+      <h1 class="robotName">{{name}}</h1>
+      {{ #job }}
+          {{ job }},
+          {{ /job }}
+          {{ ^job }}
+          <p class="available">available for hire</p>
+      {{ /job }}
+      <p>{{company}}</p>
 
 
     </section>

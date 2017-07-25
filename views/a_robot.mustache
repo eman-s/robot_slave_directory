@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/styles.css">
     <meta charset="utf-8">
     <title>robit</title>
   </head>
-  <body>
-    <h1>{{name}}</h1>
-    <img src="{{avatar}}" alt="{{name}}">
-    <p>{{job}}</p>
-    <p>{{company}}</p>
-    <p>{{email}}</p>
-    <p>{{phone}}</p>
+  <body id="personalBody">
+
+  <div class="profile">
+    <img class="profilePic" src="{{avatar}}" alt="{{name}}">
+
+  <div class="personalInfo">
+    <h1 class="personalName">{{name}}</h1>
+  <p>{{address.city}}, {{address.country}} | {{#job}}
+        {{ job }}
+        {{ /job }}
+        {{ ^job }}
+        available for hire
+        {{/job}}, {{company}}</p>    
+    <p class="personalEmail">{{email}} | {{phone}}</p>
+  </div>
+
+  <div class="personalEdu">
     <strong>Education</strong>
     <ul>
       <li>{{university}}</li>
@@ -19,6 +30,8 @@
     <ul>
       <li>{{skills}}</li>
     </ul>
-    <a href="http://localhost:3000/index">HOME</a>
+  </div>
+</div>
+    <a href="http://localhost:3000/robotindex">HOME</a>
   </body>
 </html>

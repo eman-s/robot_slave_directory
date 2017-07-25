@@ -1,14 +1,28 @@
-body{
+#indexBody{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
 }
-
-section{
-/*padding: 20px;
-width: 60px;
-height: ;*/
+.available{
+  color:red;
+}
+.avatarBox{
+align-items: center;
 border-style: solid;
 border-width: thin;
 }
+
+.profile{
+  display: flex;
+}
+
+.profilePic{
+  border-style: solid;
+  border-width: thin;
+  padding: 18px;
+  border-radius: 100px;
+}
+/*.personalEdu{
+  display: block;
+}*/
