@@ -17,7 +17,7 @@
         {{ /job }}
         {{ ^job }}
         available for hire
-        {{/job}}, {{company}}</p>    
+        {{/job}}, {{company}}</p>
     <p class="personalEmail">{{email}} | {{phone}}</p>
   </div>
 
@@ -27,9 +27,13 @@
       <li>{{university}}</li>
     </ul>
     <strong>Skills</strong>
-    <ul>
-      <li>{{skills}}</li>
-    </ul>
+    {{ #skills }}
+    <div>
+      <ul>
+        <li>{{ . }}</li>
+      </ul>
+    </div>
+  {{ /skills }}
   </div>
 </div>
     <a href="http://localhost:3000/robotindex">HOME</a>
