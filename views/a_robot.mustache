@@ -17,7 +17,7 @@
         {{ job }}
         {{ /job }}
         {{ ^job }}
-        available for hire
+        <p class="available">available for hire</p>
         {{/job}} {{company}}</p>
     <p class="personalEmail">{{email}} | {{phone}}</p>
   </div>
@@ -34,7 +34,7 @@
     <strong>Skills</strong>
     <div class="skillz">
     {{ #skills }}
-    <p>{{ . }}</p>    
+    <p>{{ . }}</p>
     {{ /skills }}
     </div>
   </div>
